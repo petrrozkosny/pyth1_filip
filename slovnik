@@ -1,27 +1,52 @@
-data = {
+evropska_unie = {
     "Německo": {
         "měna": "EUR",
         "hlavní město": "Berlín",
-        "největší města": ["Berlín", "Hamburk", "Mnichov"]
+        "populace": 83000000,
+        "největší města": {
+            "Berlín": 3600000,
+            "Hamburk": 1800000,
+            "Mnichov": 1500000
+        }
     },
     "Francie": {
         "měna": "EUR",
         "hlavní město": "Paříž",
-        "největší města": ["Paříž", "Marseille", "Lyon"]
+        "populace": 68000000,
+        "největší města": {
+            "Paříž": 2100000,
+            "Marseille": 870000,
+            "Lyon": 530000
+        }
     },
     "Itálie": {
         "měna": "EUR",
         "hlavní město": "Řím",
-        "největší města": ["Řím", "Milán", "Neapol"]
+        "populace": 59000000,
+        "největší města": {
+            "Řím": 2800000,
+            "Milán": 1400000,
+            "Neapol": 960000
+        }
     },
     "Španělsko": {
         "měna": "EUR",
         "hlavní město": "Madrid",
-        "největší města": ["Madrid", "Barcelona", "Valencie"]
+        "populace": 48000000,
+        "největší města": {
+            "Madrid": 3300000,
+            "Barcelona": 1600000,
+            "Valencie": 800000
+        }
     },
     "Polsko": {
         "měna": "PLN",
         "hlavní město": "Varšava",
-        "největší města": ["Varšava", "Krakov", "Lodž"]
+        "populace": 38000000,
+        "největší města": {
+            "Varšava": 1800000,
+            "Krakov": 800000,
+            "Lodž": 660000
+        }
     }
 }

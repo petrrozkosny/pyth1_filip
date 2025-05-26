@@ -1,0 +1,27 @@
+data = {
+    "Německo": {
+        "měna": "EUR",
+        "hlavní město": "Berlín",
+        "největší města": ["Berlín", "Hamburk", "Mnichov"]
+    },
+    "Francie": {
+        "měna": "EUR",
+        "hlavní město": "Paříž",
+        "největší města": ["Paříž", "Marseille", "Lyon"]
+    },
+    "Itálie": {
+        "měna": "EUR",
+        "hlavní město": "Řím",
+        "největší města": ["Řím", "Milán", "Neapol"]
+    },
+    "Španělsko": {
+        "měna": "EUR",
+        "hlavní město": "Madrid",
+        "největší města": ["Madrid", "Barcelona", "Valencie"]
+    },
+    "Polsko": {
+        "měna": "PLN",
+        "hlavní město": "Varšava",
+        "největší města": ["Varšava", "Krakov", "Lodž"]
+    }
+}

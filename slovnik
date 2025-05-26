@@ -1,4 +1,4 @@
-evropska_unie = {
+data = {
     "Německo": {
         "měna": "EUR",
         "hlavní město": "Berlín",

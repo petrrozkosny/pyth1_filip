@@ -1,0 +1,36 @@
+# Cvičení 4
+
+# 1. Do proměnné `vstup` uložte vstup od uživatele pomocí funkce input().
+# 2. Pokuste se otevřít soubor `hledane_hodnoty.txt` v režimu čtení a do proměnné `hodnoty` uložte výsledek metody readlines().
+#    Pokud soubor neexistuje, vytvořte proměnnou `hodnoty` jako prázdný seznam.
+# 3. Procházejte položky v seznamu `hodnoty`.
+# 4. Aktuální položku uložte do proměnné `hledana_hodnota`.
+# 5. Pomocí metody `.replace("\n", "")` odstraňte znak nového řádku z proměnné `hledana_hodnota`.
+# 6. Zkontrolujte, zda se `hledana_hodnota` rovná proměnné `vstup`:
+#    - pokud ano, vypište „Již bylo hledáno“ a ukončete iteraci pomocí příkazu `break`
+#    - pokud ne, pokračujte v procházení
+# 7. Pokud se po dokončení iterace proměnná `vstup` nenašla v souboru, vypište uživateli „Nebylo hledáno, zapisuji do souboru“
+#    a zapište hodnotu `vstup` na nový řádek do souboru `hledane_hodnoty.txt` v režimu přidání ("a").
+
+vstup = input("Zadejte hodnotu: ")
+try:
+    with open("hledane_hodnoty.txt","r",encoding="utf-8") as soubor:
+        hodnoty = soubor.readlines()
+
+except FileNotFoundError:
+    hodnoty = []
+    print("Soubor nenalezen")
+
+nalezeno = None
+for hledana_hodnota in hodnoty:
+    hledana_hodnota = hledana_hodnota.replace("\n","")
+    if hledana_hodnota == vstup:
+        print("Již bylo hledáno")
+        nalezeno = True
+        break
+if not nalezeno:
+    print("Nebylo hledáno, zapisuji do souboru")
+    with open("hledane_hodnoty.txt","a",encoding="utf-8") as soubor:
+        soubor.write(vstup+"\n")
+    print("Nebylo hledáno, zapisuji do souboru")
+    
